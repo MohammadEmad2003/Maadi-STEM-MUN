@@ -1,0 +1,201 @@
+
+/* START: NAVBAR */
+
+
+/*
+
+.navbar .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar-brand span:not(.brand-name) {
+    color: rgb(0, 0, 100);
+}
+
+.navbar .navbar-brand img {
+    width: 50px;
+    border-radius: 0.3rem;
+    margin-right: 1rem;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: black;
+    border-radius: 0.3rem;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    transition: 0.2s;
+}
+
+.navbar .navbar-nav .nav-link.active {
+    background-color: black;
+    border-radius: 0.3rem;
+    color: white;
+}
+
+.navbar .navbar-nav .nav-link:not(.active):hover {
+    background-color: black;
+    color: white;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler {
+    transform: rotate(-90deg);
+    transition: 0.2s;
+}
+
+.navbar-toggler.collapsed {
+    transform: rotate(0deg);
+}
+
+@media only screen and (max-width: 991.98px) {
+    .navbar .navbar-nav {
+        align-items: center;
+    }
+    .navbar .navbar-nav .nav-link {
+        width: fit-content;
+        margin-top: 0.3rem;
+        margin-bottom: 0.3rem;
+    }
+    .navbar .navbar-nav {
+        margin-top: 0.7rem;
+        margin-bottom: 0;
+    }
+}
+
+*/
+
+
+/* END: NAVBAR */
+
+
+
+
+
+/* START: Hero */
+
+.hero {
+    /* background-image: url('https://picsum.photos/seed/picsum/200/300');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    width: 100vw;
+    min-height: calc(100vh - 150px);
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .row {
+    width: 75%;
+}
+
+.hero img {
+    display: block;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.2s;
+    box-shadow: 0px 0px 7px grey;
+}
+
+.hero img:hover {
+    transform: scale(1.025);
+}
+
+.hero .hero_title span span {
+    color: rgb(0, 0, 157);
+}
+
+@media (max-width: 767.98px) {
+    .hero .row {
+        width: 100%;
+    }
+    .hero .hero_title {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .hero .row {
+        text-align: center;
+    }
+}
+
+
+/* END: Hero */
+
+
+/* START: Footer */
+
+footer {
+    height: 100px;
+}
+
+footer .myicon {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+footer .myicon svg {
+    width: 20px;
+    height: 20px;
+    fill: rgb(52, 56, 59);
+}
+
+footer .myicon:nth-child(1) svg:hover path:nth-child(1) {
+    fill: #4285f4;
+}
+
+footer .myicon:nth-child(1) svg:hover path:nth-child(2) {
+    fill: #34a853;
+}
+
+footer .myicon:nth-child(1) svg:hover path:nth-child(3) {
+    fill: #fbbc04;
+}
+
+footer .myicon:nth-child(1) svg:hover path:nth-child(4) {
+    fill: #ea4335;
+}
+
+footer .myicon:nth-child(1) svg:hover path:nth-child(5) {
+    fill: #c5221f;
+}
+
+footer .myicon:nth-child(2) svg:hover {
+    fill: rgb(66, 103, 178);
+}
+
+footer .myicon:nth-child(3) svg:hover {
+    fill: #e6683c;
+}
+
+footer .myicon:nth-child(4) svg:hover {
+    fill: rgb(10, 102, 194);
+}
+
+@media (max-width: 991.98px) {
+    footer {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+
+/* END: Footer */

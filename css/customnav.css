@@ -1,0 +1,121 @@
+/* START: Essentials */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(180, 180, 180);
+    border-radius: 10px;
+}
+
+
+/* START: Essentials */
+
+
+/* START: CustomNav */
+
+.customnavbar {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    padding-right: 1.3rem;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.customnavbar .togglenavbar {
+    border: none;
+    background-color: transparent;
+    padding-top: 20px;
+}
+
+.customnavbar .togglenavbar span {
+    display: block;
+    transition: 0.1s;
+}
+
+.customnavbar .togglenavbar:hover span {
+    transform: translateY(-50%);
+}
+
+.customnavbar .navbar_container {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.customnavbar a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    transition: 0.1s;
+    writing-mode: vertical-rl;
+    text-orientation: sideways-right;
+    transform: rotate(180deg);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 1.1rem;
+}
+
+.customnavbar a span {
+    display: block;
+    transition: 0.1s;
+}
+
+.customnavbar a:hover span {
+    transform: translateX(30%) scale(1.05);
+    text-shadow: 0.5px 0.5px 1px black;
+}
+
+.customnavbar .togglenavbar {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.customnavbar a.active span {
+    text-shadow: 0.5px 0.5px 1px black;
+}
+
+@media (max-width: 991.98px) {
+    .customnavbar {
+        position: fixed;
+        right: 0;
+        top: auto;
+        bottom: 0;
+        height: 70px;
+        width: 100vw;
+        padding-right: 1.3rem;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 0) 100%);
+    }
+    .customnavbar .navbar_container {
+        padding-top: 15px;
+    }
+    .customnavbar a {
+        writing-mode: horizontal-tb;
+        text-orientation: sideways;
+        transform: rotate(0deg);
+        padding-top: 3px;
+        padding-bottom: 3px;
+        font-size: 1.1rem;
+    }
+    .customnavbar a:hover span {
+        transform: translateY(-30%) scale(1.05);
+    }
+}
+
+@media (max-width: 767.98px) {}
+
+
+/* END: CustomNav */

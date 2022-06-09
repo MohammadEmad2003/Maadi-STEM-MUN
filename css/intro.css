@@ -1,0 +1,76 @@
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+/* START: INTRO */
+
+.intro-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+}
+
+.intro-container .introtext1 {
+    margin-bottom: 5rem;
+    opacity: 0;
+}
+
+.intro-container .introtext2-container {
+    width: fit-content;
+}
+
+.intro-container .introtext2 {
+    font-weight: 900;
+    font-size: 2.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    width: 0;
+    /* animation: typing 2s steps(35, end);
+    animation-delay: 2s;
+    animation-fill-mode: forwards; */
+}
+
+.intro-container span.intro_abbr {
+    color: rgb(0, 0, 157);
+}
+
+.intro-container span.intro_disappearing {
+    display: inline-block;
+    white-space: pre;
+}
+
+
+/* @keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+} */
+
+@media only screen and (max-width: 767.98px) {
+    .intro-container .introtext2 {
+        font-size: 1.2rem;
+    }
+}
+
+.page-content {
+    opacity: 0;
+}
+
+
+/* END: INTRO */
